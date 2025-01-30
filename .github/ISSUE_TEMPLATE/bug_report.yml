@@ -1,0 +1,61 @@
+name: 🐞 Bug
+description: File a bug
+title: "<THING> should <BEHAVE THAT WAY>"
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 🐛 Describe the bug
+      placeholder: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: expectation
+    attributes:
+      label: 💭 Expected Behavior
+      placeholder: A concise description of what you expected to happen.
+    validations:
+      required: false
+  - type: textarea
+    id: howto
+    attributes:
+      label: 🔁 Steps To Reproduce
+      placeholder: |
+        Provide all the steps needed to reproduce the behavior:
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: false
+  - type: checkboxes
+    id: environment
+    attributes:
+      label: 🌎 Environments
+      description: In which environment(s) has the bug been observed?
+      options:
+      - label: Sandbox
+      - label: Staging
+      - label: Production
+  - type: textarea
+    id: added_context
+    attributes:
+      label: 📝 Additional context
+      placeholder: Add any other context about the problem here.
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: 📜 Relevant log output
+      placeholder: If applicable, copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 📸 Screenshots
+      placeholder: If applicable, add screenshots to help explain your problem.
+    validations:
+      required: false
