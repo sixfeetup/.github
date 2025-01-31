@@ -1,0 +1,37 @@
+name: Spike
+description: Define a timeboxed research objective.
+title: "<SPECIFIC QUESTION>"
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: ❓ What question are we asking?
+      placeholder: Define clearly the deliverable(s) of the research and how detailed it should be.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 🎯 What is the scope?
+      placeholder: Keep the research focused on the right objective, defined by the business problem we're solving.
+  - type: input
+    id: timebox
+    attributes:
+      label: ⏰ How long do we have to find an answer?
+      description: Timebox the research before we have to make the best decision we can so we don't burn too much budget on this question alone.
+  - type: input
+    attributes:
+      label: 📒 Where are we logging our findings?
+      description: "Where will you store or document your findings?"
+      placeholder: The Github repo is the best place in general but maybe not here. Keep track of all findings.
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: 📝 Additional context
+      placeholder: Add any other context about the research objective here, such as points of contact or references.
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: 🕸️ Dependencies (Optional)
+      placeholder: What issues need to be resolved prior to doing this work? Link to those issues here.
+    validations:
+      required: false
