@@ -5,19 +5,20 @@ body:
     id: description
     attributes:
       label: 📋 User requirements
-      placeholder: |
-      AS A [user]
-      I WANT [feature]
-      &nbsp;&nbsp;&nbsp;&nbsp;AND [optional clause; too many of these is a sign of scope creep.]
-      SO THAT [business case for feature]
-      &nbsp;&nbsp;&nbsp;&nbsp;AND [optional clause; too many of these is a sign of scope creep]
+      value: |
+        AS A {{ user }}
+        I WANT {{ feature }}
+        &nbsp;&nbsp;&nbsp;&nbsp;AND {{ optional clause; too many of these is a sign of scope creep. }}
+        SO THAT {{ business case for feature }}
+        &nbsp;&nbsp;&nbsp;&nbsp;AND {{ optional clause; too many of these is a sign of scope creep }}
     validations:
       required: true
   - type: textarea
     id: acceptance
     attributes:
       label: ✅ Acceptance criteria
-      placeholder: Describe the steps leading a user or system to the expected results for this feature. The [Gherkin Language](https://cucumber.io/docs/gherkin/reference) is an option with syntax highlighting in code blocks.
+      description: The [Gherkin Language](https://cucumber.io/docs/gherkin/reference) is an option with syntax highlighting in code blocks.
+      placeholder: Describe the steps leading a user or system to the expected results for this feature.
     validations:
       required: false
   - type: textarea
