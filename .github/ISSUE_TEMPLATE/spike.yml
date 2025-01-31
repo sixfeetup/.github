@@ -22,7 +22,6 @@ body:
   - type: input
     attributes:
       label: 📒 Where are we logging our findings?
-      description: "Where will you store or document your findings?"
       placeholder: The Github repo is the best place in general but maybe not here. Keep track of all findings.
   - type: textarea
     id: additional_context
