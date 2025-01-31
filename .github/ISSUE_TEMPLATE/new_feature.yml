@@ -1,0 +1,50 @@
+name: ✨ New feature
+description: Document the requirements for a new feature
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 📋 User requirements
+      placeholder: |
+      AS A [user]
+      I WANT [feature]
+      &nbsp;&nbsp;&nbsp;&nbsp;AND [optional clause; too many of these is a sign of scope creep.]
+      SO THAT [business case for feature]
+      &nbsp;&nbsp;&nbsp;&nbsp;AND [optional clause; too many of these is a sign of scope creep]
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: ✅ Acceptance criteria
+      placeholder: Describe the steps leading a user or system to the expected results for this feature. The [Gherkin Language](https://cucumber.io/docs/gherkin/reference) is an option with syntax highlighting in code blocks.
+    validations:
+      required: false
+  - type: textarea
+    id: outascope
+    attributes:
+      label: 🛸 Out of scope
+      placeholder: What should NOT be done
+    validations:
+      required: false
+  - type: textarea
+    id: added_context
+    attributes:
+      label: 📝 Additional context (Optional)
+      placeholder: Add any other context about the research objective here, such as points of contact, starting references, etc.
+    validations:
+      required: false
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: 🕸️ Dependencies (Optional)
+      placeholder: What issues need to be resolved prior to doing this work? Link to those issues here.
+    validations:
+      required: false
+  - type: textarea
+    id: wireframe
+    attributes:
+      label: 🖼️ Wireframe (Optional)
+      placeholder: A picture is worth a thousand words
+    validations:
+      required: false
