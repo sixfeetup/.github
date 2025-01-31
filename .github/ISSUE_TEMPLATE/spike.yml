@@ -18,6 +18,7 @@ body:
     attributes:
       label: ⏰ How long do we have to find an answer?
       description: Timebox the research before we have to make the best decision we can so we don't burn too much budget on this question alone.
+      placeholder: 4 hours
   - type: input
     attributes:
       label: 📒 Where are we logging our findings?
