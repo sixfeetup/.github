@@ -1,0 +1,30 @@
+name: 🛠️ Task
+description: Template for outlining and tracking a task, typically a subissue of a User Story
+title: "<Short Description starting with a verb>"
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 🔭 Task Overview
+      placeholder: Provide a clear and concise description of the task, including its purpose and context within the project.
+  - type: textarea
+    id: objectives
+    attributes:
+      label: 🎯 Objectives
+      description: "Explain what needs to be accomplished. List specific goals and on of this task."
+      placeholder: "List objectives here"
+  - type: textarea
+    id: steps
+    attributes:
+      label: 🔬 Steps or Implementation Details
+      description: "Time to get technical: Outline the steps required to complete the task."
+      placeholder: |
+        1. **Step One:** Describe the initial action.
+        2. **Step Two:** Detail subsequent actions.
+        3. **Step Three:** Include any necessary follow-up.
+  - type: textarea
+    attributes:
+      label: 📝 Additional context (Optional)
+      value: |
+        Add any relevant notes, links, or context (e.g., related issues, dependencies, or design documents).
