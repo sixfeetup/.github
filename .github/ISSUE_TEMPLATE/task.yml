@@ -28,3 +28,10 @@ body:
       label: 📝 Additional context (Optional)
       value: |
         Add any relevant notes, links, or context (e.g., related issues, dependencies, or design documents).
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: 🕸️ Dependencies (Optional)
+      placeholder: What issues need to be resolved prior to doing this work? Link to those issues here.
+    validations:
+      required: false
