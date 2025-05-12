@@ -20,8 +20,15 @@ This file provides guidance to Claude Code (claude.ai/code) when creating GitHub
 - User stories should always be parent issues so point that out if I ask to create a user story as a sub-issue
 - Include emoji in issue titles (like 🐞, ✨, 🌵, 🛠️) matching the template emoji
 - Use the GitHub CLI (`gh`) to create issues directly without opening in the browser
-- When creating issues with GitHub CLI, use `--repo` to specify the repository and omit the `--web` flag to create the issue completely via CLI
 - Format the issue body according to the template's structure and fields
+
+## GitHub issue creation
+- When creating issues with GitHub CLI, use `--repo` to specify the repository and omit the `--web` flag to create the issue completely via CLI
+- NEVER guess the repo name. If it's not provided, then ask for it before trying to create the issue.
+- Open the issue in my web browser after you created it using `gh issue view --web`
+
+## GitHub description rules
+- DO NOT ESCAPE special characters except `"`
 
 ## Commands
 - No specific build/lint/test commands for this repository
