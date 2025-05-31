@@ -1,0 +1,26 @@
+name: 📚 Documentation
+description: Template for documentation improvements or updates
+title: "<Short description of documentation change>"
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 📝 Description
+      placeholder: Describe what documentation needs to be added, updated, or fixed.
+    validations:
+      required: true
+  - type: input
+    id: file_location
+    attributes:
+      label: 📂 File Location
+      placeholder: Specify the file path or location where documentation changes are needed (e.g., README.md, docs/api.md)
+    validations:
+      required: false
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: 📋 Additional Context (Optional)
+      placeholder: Add any other relevant information, links to related issues, or examples.
+    validations:
+      required: false
