@@ -1,6 +1,6 @@
 ## :dart: What needed to be done and why?
 
-Ticket: #123
+resolves #123
 (Also in the title)
 
 *Quick summary of the issue*
