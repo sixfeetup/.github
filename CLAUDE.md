@@ -14,7 +14,7 @@ For all content, prioritize clarity, specificity, and actionable details while m
 - The current folder contains a hidden directory `.github/`.
 - When searching for files, always include hidden files and directories
 - GitHub issue templates are maintained in YAML format in `.github/ISSUE_TEMPLATE/`
-- Professional business document templates are in in the folder `docs-template`
+- Professional business document templates are in in the folder `docs-templates`
 
 ## GitHub Issue Standards
 - When creating GitHub issues for any SixFeetUp repository, use the templates from THIS repository (dot-github)
