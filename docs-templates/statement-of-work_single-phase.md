@@ -1,14 +1,14 @@
 # [Project Name]
 
-## Executive Summary
+## Context
 
-This Statement of Work outlines the proposed [brief project description]. The project will be delivered in [number] phases, each building upon the previous to [high-level benefits and outcomes].
+[Who is the customer and what industry do they work in? Provide relevant background about the client organization, their business, and any pertinent information about their environment or operations.]
 
-## Background
+## Challenge
 
-[Provide context about the current state, challenges, and the need for this project. Include information about existing systems or processes if applicable.]
+[What is the business challenge the client is facing that they want us to solve? Why is it important? Describe the problem, pain points, and the business impact of not addressing this challenge.]
 
-## Scope
+## Proposed Scope
 
 **Objective:** [Concise description of what this phase aims to accomplish and the value it delivers to stakeholders]
 
