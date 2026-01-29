@@ -34,6 +34,7 @@ body:
       label: 🌎 Environments
       description: In which environment(s) has the bug been observed?
       options:
+      - label: Local
       - label: Sandbox
       - label: Staging
       - label: Production
