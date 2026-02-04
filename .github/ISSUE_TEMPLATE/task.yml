@@ -12,7 +12,7 @@ body:
     id: objectives
     attributes:
       label: 🎯 Objectives
-      description: "Explain what needs to be accomplished. List specific goals and on of this task."
+      description: "Explain what needs to be accomplished. List specific goals and scope of this task."
       placeholder: "List objectives here"
   - type: textarea
     id: steps
