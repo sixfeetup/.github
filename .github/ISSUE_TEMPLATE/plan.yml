@@ -1,0 +1,49 @@
+name: 📐 Plan
+description: Turn spike findings into actionable stories and tasks
+title: "<PLAN OBJECTIVE>"
+body:
+  - type: textarea
+    id: spike_references
+    attributes:
+      label: 🌵 Spike(s)
+      description: Link to the spike(s) that inform this plan.
+      placeholder: "#123"
+    validations:
+      required: true
+  - type: textarea
+    id: objective
+    attributes:
+      label: 🎯 Objective
+      placeholder: What are we planning for? Summarize the goal based on spike findings.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 🔲 Scope
+      placeholder: What's in and what's out.
+  - type: textarea
+    id: breakdown
+    attributes:
+      label: 🗂️ Stories & Tasks
+      description: The deliverable. List the stories and tasks this plan produces. Update as the plan evolves.
+      placeholder: |
+        - [ ] ✨ Story: ...
+        - [ ] 🛠️ Task: ...
+        - [ ] 🛠️ Task: ...
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: 🕸️ Dependencies (Optional)
+      placeholder: What issues need to be resolved prior to doing this work? Link to those issues here.
+    validations:
+      required: false
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: 📝 Additional context (Optional)
+      placeholder: Add any other context, diagrams, or references.
+    validations:
+      required: false
