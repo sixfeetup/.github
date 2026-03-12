@@ -1,0 +1,24 @@
+name: 🥸 Access Request
+description: Add user to security groups or systems
+title: "<User List>"
+body:
+  - type: textarea
+    id: user_list
+    attributes:
+      label: 👥Users
+      description: List of users (email addresses) to grant access
+      placeholder: "abc@sixfeetup.com"
+    validations:
+      required: true
+  - type: textarea
+    id: security_group_or_system
+    attributes:
+      label: 🔒Security Group or System
+      placeholder: What do the users need access to?
+    validations:
+      required: true
+  - type: textarea
+    id: other
+    attributes:
+      label: 📝 Other Information/Notes
+      placeholder: 
