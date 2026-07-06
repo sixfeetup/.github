@@ -1,7 +1,8 @@
 ## :dart: What needed to be done and why?
 
 resolves #123
-(Also in the title)
+
+<!-- Also include the issue number in the PR title, for example: #123 Add project import validation -->
 
 *Quick summary of the issue*
 
