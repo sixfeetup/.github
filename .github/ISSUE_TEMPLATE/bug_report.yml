@@ -21,7 +21,11 @@ body:
     attributes:
       label: 🔁 Steps To Reproduce
       placeholder: |
-        Provide all the steps needed to reproduce the behavior:
+        Provide all the steps needed to reproduce the behavior.
+
+        User role:
+        Browser(s)/OS:
+
         1. Go to '...'
         2. Click on '....'
         3. Scroll down to '....'
@@ -34,10 +38,10 @@ body:
       label: 🌎 Environments
       description: In which environment(s) has the bug been observed?
       options:
-      - label: Local
-      - label: Sandbox
-      - label: Staging
-      - label: Production
+        - label: Local
+        - label: Sandbox
+        - label: Staging
+        - label: Production
   - type: textarea
     id: added_context
     attributes:
@@ -49,7 +53,8 @@ body:
     id: logs
     attributes:
       label: 📜 Relevant log output
-      placeholder: If applicable, copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      placeholder: If applicable, copy and paste any relevant log output. This will be
+        automatically formatted into code, so no need for backticks.
       render: shell
     validations:
       required: false
