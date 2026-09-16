@@ -8,9 +8,9 @@ body:
       value: |
         AS A {{ user }}
         I WANT {{ feature }}
-        &nbsp;&nbsp;&nbsp;&nbsp;AND {{ optional clause; too many of these is a sign of scope creep. }}
+        AND {{ optional clause; too many of these is a sign of scope creep. }}
         SO THAT {{ business case for feature }}
-        &nbsp;&nbsp;&nbsp;&nbsp;AND {{ optional clause; too many of these is a sign of scope creep }}
+        AND {{ optional clause; too many of these is a sign of scope creep. }}
     validations:
       required: true
   - type: textarea
