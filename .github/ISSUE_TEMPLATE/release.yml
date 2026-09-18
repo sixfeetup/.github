@@ -1,67 +1,30 @@
 name: 🚀 Release Checklist
-description: Pre- and post-release checklist for coordinating builds, QA, and deferred work
+description: Simple pre- and post-release reminders
 title: "Release <version>"
 
 body:
   - type: markdown
     attributes:
       value: |
-        Fill in dates, names, and project links before sharing with the team. Each section below renders as its own block in the issue.
+        Adapt this checklist to your release. Keep issue status, milestones, and deferred work in the GitHub project rather than duplicating them here.
   - type: textarea
-    id: milestones
+    id: before-release
     attributes:
-      label: 🚩 GitHub Milestones
+      label: 🔍 Before the Release
       value: |
-        - [ ]  TL creates milestones in GitHub for current and next releases
-        - [ ]  All must-have issues tagged with milestone
-        - [ ]  Issues NOT required for initial release tagged with a different release milestone
+        - [ ] All issues included in the release have passed QA
+        - [ ] No unfinished or broken features are included in the release
+        - [ ] Optional: Run a security review of all changes since the last release (e.g. `/security-review` with Claude Code)
   - type: textarea
-    id: code-freeze
+    id: create-release
     attributes:
-      label: 🧊 Code Freeze (target: ONE_DAY_BEFORE_RELEASE)
+      label: 🚀 Create Release
       value: |
-        - [ ]  All Initial Release issues resolved or explicitly deferred (👈 link to GH project)
-        - [ ]  All open PRs reviewed and merged to `main`
-        - [ ]  No outstanding bugs blocking core functionality
+        - [ ] Create the release using the project's release process
   - type: textarea
-    id: release-build
+    id: after-release
     attributes:
-      label: 🏗️ Release Build (BUILD_DATE — Engineer Name Here)
+      label: 📣 After Deployment to Production
       value: |
-        - [ ]  All CI checks green on `main`
-        - [ ]  Production build created and smoke-tested
-        - [ ]  Build artifact shared by SOME_DEADLINE
-        - [ ]  Push tickets to QA
-  - type: textarea
-    id: qa
-    attributes:
-      label: 🔍 QA / Pre-Stress-Test Verification (QA Person Here, QA_DATE_RANGE)
-      value: |
-        - [ ]  Awaiting QA tickets (👈 link to GH project) for Initial Release Milestone tested
-        - [ ]  Core flow works end-to-end
-        - [ ]  Other important feature is good
-        - [ ]  App starts cleanly; error state on startup shows proper UI
-  - type: textarea
-    id: post-stress-test
-    attributes:
-      label: 🛠️ Post-Stress-Test (TEST_DATE_RANGE)
-      value: |
-        - [ ]  Collect all issues reported during test
-        - [ ]  Triage and prioritize fixes
-        - [ ]  Ship patch build before YOUR_DEADLINE_HERE if needed — ideally several days before
-  - type: textarea
-    id: release-notes
-    attributes:
-      label: 📣 Release Notes / Announcement
-      placeholder: Draft the changelog summary or comms here.
-    validations:
-      required: false
-  - type: textarea
-    id: deferred
-    attributes:
-      label: ⏳ Deferred / Next Sprint
-      value: |
-        The following are acknowledged but **not required** for the stress test:
-
-        - Unimportant ticket here
-        - Important, non-urgent feature here
+        - [ ] Quickly smoke-test the release in production
+        - [ ] Send a friendly changelog to stakeholders (an AI agent can draft it from the commits since the last release)
