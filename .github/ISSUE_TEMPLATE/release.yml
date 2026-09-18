@@ -1,0 +1,30 @@
+name: 🚀 Release Checklist
+description: Simple pre- and post-release reminders
+title: "Release <version>"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Adapt this checklist to your release. Keep issue status, milestones, and deferred work in the GitHub project rather than duplicating them here.
+  - type: textarea
+    id: before-release
+    attributes:
+      label: 🔍 Before the Release
+      value: |
+        - [ ] All issues included in the release have passed QA
+        - [ ] No unfinished or broken features are included in the release
+        - [ ] Optional: Run a security review of all changes since the last release (e.g. `/security-review` with Claude Code)
+  - type: textarea
+    id: create-release
+    attributes:
+      label: 🚀 Create Release
+      value: |
+        - [ ] Create the release using the project's release process
+  - type: textarea
+    id: after-release
+    attributes:
+      label: 📣 After Deployment to Production
+      value: |
+        - [ ] Quickly smoke-test the release in production
+        - [ ] Send a friendly changelog to stakeholders (an AI agent can draft it from the commits since the last release)
